@@ -6,24 +6,24 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-12">
-			<h1 class="page-header"> Bienvenidos a la Tarea III </h1>
+			<h1 class="page-header"> BIENVENIDOS A LA TAREA III </h1>
 		</div>
 	</div>
 
 	<div class="container">
-		<div class="col-sm-5 col-sm-offset-1">
+		<div class="col-sm-4 col-sm-offset-2">
 		   <img class="img-responsive center-block" src="{% static "img/invader1.jpg" %}" height="30%">
 		</div>
 		<div class="col-sm-4">
-			<form class="form-signin" action = "" method = "post">
-				<h2 class="form-signin-heading">Empieza tu reto YA!</h2>
+			<form class="form-signin" action = "" method = "post"> {% csrf_token%}
+				<h4 class="form-signin-heading">EMPIEZA TU RETO YA</h4>
 				<label class="sr-only" >nombreequipo</label>
-				<input type="text" name="nombreequipo" class="form-control" placeholder="nombre del equipo" autofocus=""><br>
+				<input type="text" name="equipo" class="form-control" placeholder="nombre del equipo" autofocus=""><br>
 				<label class="sr-only">password</label>
-				<input type="password" name="password" class="form-control" placeholder="contraseña"><br>
-				<button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button>
+				<input type="password" name="password" class="form-control" placeholder="contrasena"><br>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">iniciar sesion</button>
 				<br>
-				<a href = "{% url "register" %}" style="text-decoration: none;"> Registra tu equipo </a><br>
+				<a href = "{% url "register" %}" style="text-decoration: none;"> registra tu equipo </a><br>
 			</form>
 		</div>
 	</div>
