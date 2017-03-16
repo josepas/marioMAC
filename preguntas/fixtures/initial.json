@@ -1,7 +1,7 @@
 [
   {
     "model": "preguntas.pregunta",
-    "pk": 23,
+    "pk": 1,
     "fields": {
       "nombre": "inicio",
       "enunciado": "Mostrar el hostname de la máquina sin leerlo de un archivo",
@@ -10,7 +10,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 1,
+    "pk": 2,
     "fields": {
       "nombre": "mac_bros",
       "enunciado": "Mostrar los usuarios loggeados y en donde",
@@ -19,7 +19,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 2,
+    "pk": 3,
     "fields": {
       "nombre": "kamek",
       "enunciado": "lista los  archivos de los directorios _ZO, _DE (ocultos, subdirectorios, y permisologia)",
@@ -28,7 +28,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 3,
+    "pk": 4,
     "fields": {
       "nombre": "boo",
       "enunciado": "Donde está el comando ifconfig?",
@@ -37,7 +37,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 4,
+    "pk": 5,
     "fields": {
       "nombre": "chain",
       "enunciado": "Cambiarse a _ZO, luego cambiarse a _RA y finalmente devolverse al primer directorio sin usar el path explícito",
@@ -46,7 +46,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 5,
+    "pk": 6,
     "fields": {
       "nombre": "hammer",
       "enunciado": "Mostrar todas las líneas del archivo YOSHI que hagan match con alguna palabra que tenga: dos puntos, los siguientes cuatro caracteres contengan los números entre 1 y 5 y que los siguientes 3 a 6 caracteres contengan las letras entre a y e",
@@ -55,7 +55,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 6,
+    "pk": 7,
     "fields": {
       "nombre": "babe",
       "enunciado": "Liste todos los archivos cuyo nombre no tiene 4 caracteres",
@@ -64,7 +64,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 7,
+    "pk": 8,
     "fields": {
       "nombre": "mario_party",
       "enunciado": "[BOSS KAMEK]Contar el número de archivos del directorio ",
@@ -73,7 +73,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 8,
+    "pk": 9,
     "fields": {
       "nombre": "795",
       "enunciado": "Diga la línea del medio del archivo block (obviamente sin usar awk ni sed, a menos que sea para imprimir el argumento)",
@@ -82,7 +82,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 9,
+    "pk": 10,
     "fields": {
       "nombre": "mushroom",
       "enunciado": "Mostrar el contenido del archivo coin de la misma manera que lo muestra el comando man ",
@@ -91,7 +91,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 10,
+    "pk": 11,
     "fields": {
       "nombre": "coinx100",
       "enunciado": "Crear los directorios  fire, flower, power con permisos de solo lectura (usando nada más mkdir)",
@@ -100,7 +100,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 11,
+    "pk": 12,
     "fields": {
       "nombre": "fire",
       "enunciado": "Copiar recursivamente los archivos que empiezan con “-” en el directorio _GHOST, solo reemplazar si es más nuevo que el que ya existe y vaya explicando lo que hace en el proceso",
@@ -109,7 +109,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 12,
+    "pk": 13,
     "fields": {
       "nombre": "babyboo",
       "enunciado": "Listar todos los archivos en el tercer nivel (solo en el tercer nivel) del directorio _Pipe (Deben estar parados en _Pipe), cuyos nombres sea babymario, sin tomar en cuenta mayusculas o minusculas",
@@ -118,7 +118,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 13,
+    "pk": 14,
     "fields": {
       "nombre": "reyboo",
       "enunciado": "Mostrar el contenido de los archivos que estén en el archivo smash. Hay que mandar los errores a /dev/null",
@@ -127,7 +127,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 14,
+    "pk": 15,
     "fields": {
       "nombre": "superstar",
       "enunciado": "ir a la carpeta _under Borrar los archivos y/o directorios de 4 y 6 caracteres preguntando antes de borrar cada uno",
@@ -136,7 +136,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 15,
+    "pk": 16,
     "fields": {
       "nombre": "yoshi",
       "enunciado": "Listar los procesos hijos del proceso padre y ordénelos de mayor a menor",
@@ -145,7 +145,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 16,
+    "pk": 17,
     "fields": {
       "nombre": "star",
       "enunciado": "Buscar la cantidad de información almacenada en / (en formato legible), mandando los errores a un archivo y los resultados a otro archivo",
@@ -154,7 +154,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 17,
+    "pk": 18,
     "fields": {
       "nombre": "boss_junior",
       "enunciado": "Estando en Castillo_Bowser_jr Cambiar los permisos de los archivos del directorio _kart, tal que sean los mismos del archivo llamado cOsA",
@@ -163,7 +163,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 18,
+    "pk": 19,
     "fields": {
       "nombre": "plant",
       "enunciado": "Mover solo los archivos del directorio _Galaxy/ que tienen de 4 , 6, u 8 caracteres, sin sobreescribir los archivos que ya existan en el directorio  _World",
@@ -172,7 +172,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 19,
+    "pk": 20,
     "fields": {
       "nombre": "bros",
       "enunciado": "Mostrar el man del comando chmod y que cada linea del man este numerada y pueda revisarlo comodamente en el tty",
@@ -181,7 +181,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 20,
+    "pk": 21,
     "fields": {
       "nombre": "metal_mario",
       "enunciado": "Genere esta secuencia de numeros en pantalla 115 116 117 118 119 120 215 216 217 218 219 220 315 316 317 318 319 320 415 416 417 418 419 420 515 516 517 518 519 520",
@@ -190,7 +190,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 21,
+    "pk": 22,
     "fields": {
       "nombre": "peach",
       "enunciado": "Buscar un archivo bigmario en Castillo_Pirana_plant y contar el numero de lineas que tiene. Luego, buscar un archivo que sea del mismo tamaño que el número de líneas obtenido, en el directorio Castillo_Pirana_plant y mostrar la ultima linea",
@@ -199,7 +199,7 @@
   },
   {
     "model": "preguntas.pregunta",
-    "pk": 22,
+    "pk": 23,
     "fields": {
       "nombre": "riegame",
       "enunciado": "Ordena los dos archivos y Comparar que esos dos archivos: drmario, mariotetris tengan las mismas líneas",
