@@ -12,7 +12,8 @@ def get_answers(equipo, preguntas):
 	for pregunta in preguntas:
 		
 		try:
-			answer = Respuesta.objects.get(equipo=equipo, pregunta=pregunta)
+			answer = Respuesta.objects.filter(equipo=equipo, pregunta=pregunta).first()
+
 		except Respuesta.DoesNotExist:
 			answer = None
 
