@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<style>
+  @font-face {
+    font-family: 'marioFont';
+    src: url('{% static 'fonts/marioFont.ttf' %}');
+    src: local('{% static 'fonts/marioFont.ttf' %}');
+  }
+</style>
+
+<div class="container">
+	<div class="col-md-12">
+		<h1 class="page-header"></h1>
+	</div>
+	<div class="col-md-2">
+		<div class="col-md-10">
+			<img class="img-responsive" src="{% static "img/coin-left.png" %}">
+			<br>
+			<img class="img-responsive" src="{% static "img/coin-left.png" %}">
+			<br>
+			<img class="img-responsive" src="{% static "img/coin-left.png" %}">
+			<br>
+			<img class="img-responsive" src="{% static "img/coin-left.png" %}">
+		</div>
+	</div>
+	<div class="col-md-8 text-center">
+		<h1 style="font-family: marioFont;">Instructivo</h1>
+		<p style="font-size: 24px;">Aquí van las instrucciones</p>
+	</div>
+	<div class="col-md-2">
+		<div class="col-md-10">
+			<img class="img-responsive" src="{% static "img/coin-right.png" %}">
+			<br>
+			<img class="img-responsive" src="{% static "img/coin-right.png" %}">
+			<br>
+			<img class="img-responsive" src="{% static "img/coin-right.png" %}">
+			<br>
+			<img class="img-responsive" src="{% static "img/coin-right.png" %}">
+		</div>
+	</div>
+</div>
+
+{% endblock %}

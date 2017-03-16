@@ -10,3 +10,7 @@ def index(request):
 def register(request):
 	
 	return render(request, 'register.html')
+
+def instructivo(request):
+	
+	return render(request, 'instructivo.html')
