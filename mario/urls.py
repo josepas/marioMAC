@@ -26,5 +26,5 @@ urlpatterns = [
     url(r'^instructivo/', views.instructivo, name="instructivo"),
     url(r'^preguntas/', include('preguntas.urls')),
     url(r'^scores/', include('scores.urls')),
-
+    url(r'^final/', views.final, name="final"),
 ]

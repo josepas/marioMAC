@@ -48,3 +48,7 @@ def instructivo(request):
 	pregunta = Pregunta.objects.all().first()
 
 	return render(request, 'instructivo.html', {"pregunta":pregunta})
+
+def final(request):
+
+	return render(request, 'final.html')
