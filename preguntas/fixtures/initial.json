@@ -12,7 +12,7 @@
     "model": "preguntas.pregunta",
     "pk": 1,
     "fields": {
-      "nombre": "mac bros",
+      "nombre": "mac_bros",
       "enunciado": "Mostrar los usuarios loggeados y en donde",
       "clave" : "kamed"
     }
@@ -149,14 +149,14 @@
     "fields": {
       "nombre": "star",
       "enunciado": "Buscar la cantidad de información almacenada en / (en formato legible), mandando los errores a un archivo y los resultados a otro archivo",
-      "clave" : "boss junior"
+      "clave" : "boss_junior"
     }
   },
   {
     "model": "preguntas.pregunta",
     "pk": 17,
     "fields": {
-      "nombre": "boss junior",
+      "nombre": "boss_junior",
       "enunciado": "Estando en Castillo_Bowser_jr Cambiar los permisos de los archivos del directorio _kart, tal que sean los mismos del archivo llamado cOsA",
       "clave" : "plant"
     }
@@ -176,14 +176,14 @@
     "fields": {
       "nombre": "bros",
       "enunciado": "Mostrar el man del comando chmod y que cada linea del man este numerada y pueda revisarlo comodamente en el tty",
-      "clave" : "metal mario"
+      "clave" : "metal_mario"
     }
   },
   {
     "model": "preguntas.pregunta",
     "pk": 20,
     "fields": {
-      "nombre": "metal mario",
+      "nombre": "metal_mario",
       "enunciado": "Genere esta secuencia de numeros en pantalla 115 116 117 118 119 120 215 216 217 218 219 220 315 316 317 318 319 320 415 416 417 418 419 420 515 516 517 518 519 520",
       "clave" : "peach"
     }
