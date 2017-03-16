@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from .models import Pregunta, Respuesta, Equipo
+import simpleaudio as sa
 
 # Create your views here.
 
@@ -18,9 +19,6 @@ def pregunta(request, id):
 
 		if request.POST['codigo'] == "shame":
 			pregunta = get_object_or_404(Pregunta, nombre=pregunta.clave)
-			context = {
-				"pregunta" : pregunta
-			}
 			return redirect('pregunta', id=pregunta.id)
 
 		# Acertaron
@@ -29,9 +27,9 @@ def pregunta(request, id):
 			respuesta = Respuesta(equipo=equipo, pregunta=pregunta)
 			respuesta.save()
 			pregunta = get_object_or_404(Pregunta, nombre=pregunta.clave)
-			context = {
-				"pregunta" : pregunta
-			}
+			wave_obj = sa.WaveObject.from_wave_file("static/img/up.wav")
+			play_obj = wave_obj.play()
+			play_obj.wait_done()
 			return redirect('pregunta', id=pregunta.id)
 
 	context = {

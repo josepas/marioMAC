@@ -3,6 +3,9 @@
 
 {% block content %}
 
+<BGSOUND SRC="{% static "{{sound}}" %}" LOOP=INFINITE>
+<EMBED SRC="{% static "{{sound}}" %}" AUTOSTART=true LOOP=true VOLUME="80" WIDTH="0" HEIGHT="0">  
+
 <div class="container">
 	<div class="col-md-8">
 		<div class="col-md-12">
