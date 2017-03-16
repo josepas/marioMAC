@@ -90,3 +90,5 @@ ENV/
 
 # Venezuela
 *.pyc
+
+db.sqlite3
