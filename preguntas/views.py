@@ -17,6 +17,8 @@ def pregunta(request, name):
 
 		# Acertaron
 		if request.POST['codigo'] == pregunta.clave:
+			respuesta = Respuesta(equipo=request.user, pregunta=pregunta)
+			respuesta.save()
 			pregunta = get_object_or_404(Pregunta, nombre=pregunta.clave)
 			context = {
 				"pregunta" : pregunta
