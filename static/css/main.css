@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'marioFont';
+  src: url('../fonts/marioFont.ttf');
+  src: local('../fonts/marioFont.ttf')
+}
