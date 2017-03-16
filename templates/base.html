@@ -53,6 +53,17 @@
         </div>
     </div>
 
+    {% if user.is_authenticated %}
+    <div class="col-md-12">
+      <div class="col-md-10">
+        <h4 class="page-header text-right">{{user.username}}</h4>
+      </div>
+      <div class="col-md-2">
+        <h4 class="page-header"><a href="{% url 'logout' %}">salir</a></h>
+      </div>
+    </div>
+    {% endif%}
+
 	{% block content %}
 
 

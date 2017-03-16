@@ -4,18 +4,15 @@
 {% block content %}
 
 <div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<h1 class="page-header"></h1>
-		</div>
-	</div>
-
 	<div class="container">
+	<div class="col-md-12">
+        <h1 class="page-header text-right"></h1>
+    </div>
 		<div class="col-sm-3 col-sm-offset-1">
 		   <img class="img-responsive center-block" src="{% static "img/toad.png" %}">
 		</div>
 		<div class="col-sm-4">
-			<form class="form-signin" action = "" method = "post">
+			<form class="form-signin" action = "" method = "post"> {% csrf_token%}
 				<h3 class="form-signin-heading text-center">REGISTRA TU EQUIPO</h3>
 				<label class="sr-only" >equipo</label>
 				<input type="text" name="equipo" class="form-control" placeholder="nombre del equipo" autofocus=""><br>
