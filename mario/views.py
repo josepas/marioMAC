@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate, logout
-from preguntas.models import Equipo
+from preguntas.models import Equipo, Pregunta
 
 # Create your views here.
 
@@ -13,12 +13,12 @@ def index(request):
 		password = request.POST['password']
 
 		user = authenticate(username=team_name,password=password)
+		pregunta = Pregunta.objects.all().first()
 
 		if user is not None:
 			if user.is_active:
-				print("ENTREEEE")
 				login(request, user)
-				return render(request, 'instructivo.html')
+				return render(request, 'instructivo.html', {"pregunta":pregunta})
 
 	return render(request, 'index.html')
 
@@ -31,8 +31,9 @@ def register(request):
 	if request.method == 'POST':
 		team_name = request.POST['equipo']
 		password = request.POST['password']
+		email = "hola@gmail.com"
 
-		user = User.objects.create_user(team_name,password)
+		user = User.objects.create_user(team_name,email,password)
 		user.save()
 
 		team = Equipo(perfil=user)
@@ -44,4 +45,6 @@ def register(request):
 
 def instructivo(request):
 	
-	return render(request, 'instructivo.html')
+	pregunta = Pregunta.objects.all().first()
+
+	return render(request, 'instructivo.html', {"pregunta":pregunta})
