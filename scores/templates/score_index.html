@@ -3,7 +3,35 @@
 {% block content %}
 
 <div class="container">
-	<h1> Tabla de Scores </h1>
+
+	<table class = "table">
+	   <caption>Tabla de Posiciones</caption>
+	   
+	   <thead>
+	      <tr>
+	      	<th>Equipo</th>
+	      	{% for pregunta in preguntas %}
+	        	<th>{{ pregunta.name }}</th>
+	      </tr>
+	   </thead>
+	   
+	   <tbody>
+	      
+	   		{% for answers in equipos %}
+	   		<tr>
+	   			<td>{{ equipo.perfil.username }}</td>
+	   			{% for answer in answer %}
+	   				{% if answer %}
+	   					<td>Si</td>
+	   				{% else %}
+	   					<td>No</td>
+	   		</tr>
+
+	   </tbody>
+		
+	</table>
+
+
 </div>
 
 {% endblock%}
