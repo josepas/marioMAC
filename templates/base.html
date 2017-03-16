@@ -58,11 +58,14 @@
 
     {% if user.is_authenticated %}
     <div class="col-md-12">
-      <div class="col-md-10">
-        <h4 class="page-header text-right">{{user.username}}</h4>
+      <div class="col-md-5">
+        <h4 class="page-header"><a style="text-decoration: none;" href="{% url 'index_score' %}">SCORES</a></h>
+      </div>
+      <div class="col-md-5">
+        <h4 class="page-header text-right" style="text-transform: uppercase;">{{user.username}}</h4>
       </div>
       <div class="col-md-2">
-        <h4 class="page-header"><a href="{% url 'logout' %}">salir</a></h>
+        <h4 class="page-header"><a style="text-decoration: none;" href="{% url 'logout' %}">SALIR</a></h>
       </div>
     </div>
     {% endif%}
