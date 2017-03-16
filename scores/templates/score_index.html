@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block content %}
 
@@ -11,21 +12,25 @@
 	      <tr>
 	      	<th>Equipo</th>
 	      	{% for pregunta in preguntas %}
-	        	<th>{{ pregunta.name }}</th>
+	        	<th>{{ pregunta.id }}</th>
+	        {% endfor %}
 	      </tr>
 	   </thead>
 	   
 	   <tbody>
 	      
-	   		{% for answers in equipos %}
+	   		{% for equipo, answers in equipos.items %}
 	   		<tr>
-	   			<td>{{ equipo.perfil.username }}</td>
-	   			{% for answer in answer %}
+	   			<td>{{ equipo }}</td>
+	   			{% for answer in answers %}
 	   				{% if answer %}
-	   					<td>Si</td>
+	   					<td> <span class="glyphicon glyphicon-ok"></span></td>
 	   				{% else %}
-	   					<td>No</td>
+	   					<td> - </td>
+	   				{% endif %}
+	   			{% endfor %}		
 	   		</tr>
+	   		{% endfor %}
 
 	   </tbody>
 		
