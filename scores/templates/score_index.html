@@ -5,37 +5,38 @@
 
 <div class="container">
 
-	<table class = "table">
-	   <caption>Tabla de Posiciones</caption>
-	   
-	   <thead>
-	      <tr>
-	      	<th>Equipo</th>
-	      	{% for pregunta in preguntas %}
-	        	<th>{{ pregunta.id }}</th>
-	        {% endfor %}
-	      </tr>
-	   </thead>
-	   
-	   <tbody>
-	      
-	   		{% for equipo, answers in equipos.items %}
-	   		<tr>
-	   			<td>{{ equipo }}</td>
-	   			{% for answer in answers %}
-	   				{% if answer %}
-	   					<td> <span class="glyphicon glyphicon-ok"></span></td>
-	   				{% else %}
-	   					<td> - </td>
-	   				{% endif %}
-	   			{% endfor %}		
-	   		</tr>
-	   		{% endfor %}
+	<div class="table-resposive">
+		<table class = "table table-striped ">
+		   <caption>Tabla de Posiciones</caption>
+		   
+		   <thead>
+		      <tr>
+		      	<th>Equipo</th>
+		      	{% for pregunta in preguntas %}
+		        	<th>{{ pregunta.id }}</th>
+		        {% endfor %}
+		      </tr>
+		   </thead>
+		   
+		   <tbody>
+		      
+		   		{% for equipo, answers in equipos.items %}
+		   		<tr>
+		   			<td>{{ equipo }}</td>
+		   			{% for answer in answers %}
+		   				{% if answer %}
+		   					<td> <span class="glyphicon glyphicon-ok"></span></td>
+		   				{% else %}
+		   					<td> - </td>
+		   				{% endif %}
+		   			{% endfor %}		
+		   		</tr>
+		   		{% endfor %}
 
-	   </tbody>
-		
-	</table>
-
+		   </tbody>
+			
+		</table>
+	</div>
 
 </div>
 
