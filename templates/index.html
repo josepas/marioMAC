@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"> Bienvenidos a la tarea 3 </h1>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="col-sm-5 col-sm-offset-1">
+		   <img class="img-responsive center-block" src="{% static "img/invader1.jpg" %}" height="30%">
+		</div>
+		<div class="col-sm-4">
+			<form class="form-signin" action = "" method = "post">
+				<h2 class="form-signin-heading">Empieza tu reto YA!</h2>
+				<label for="inputUsername" class="sr-only" >UserName</label>
+				<input type="text" id="inputUsername" name="username" class="form-control" placeholder="usuario" autofocus=""><br>
+				<label for="inputPassword" class="sr-only">Password</label>
+				<input type="password" name="password" id="inputPassword" class="form-control" placeholder="contraseña"><br>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesión</button>
+				<br>
+				<a href = "register.php" style="text-decoration: none;"> Registrarse </a><br>
+			</form>
+		</div>
+	</div>
+	<br>
+</div>
+
+{% endblock %}

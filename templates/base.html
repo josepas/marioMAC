@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarioMac</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}" />
+</head>
+   
+   <style type="text/css">
+      footer {
+         position:fixed;
+         left:0px;
+         bottom:0px;
+         width:100%;
+         background:#999;
+      }
+   </style>
+
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="col-lg-12">
+        	<img class="img-responsive center-block" src="{% static "img/banner4.jpg" %}">
+        </div>
+    </div>
+
+	{% block content %}
+
+
+
+	{% endblock %}
+
+
+
+     <!-- Footer -->
+      <footer>
+          <!-- Page Content -->
+          <div class="container-fluid">
+              <div class="row" style="background-color: #2c3e50;color: #fff">
+                 <div class="col-lg-12">
+                    <div class="col-sm-1" >
+                    <img src="{% static "img/logoUSB.png" %}" width="75px", height="45px" style="margin-top:7px">
+                    </div>
+                    <div class="col-sm-5">
+                    <br><p class="text-left">Universidad Simón Bolívar</p>
+                    </div>
+                    <div class="col-sm-6">
+                    <p class="text-right">MYS-022</p>
+                    <p class="text-right">Copyright &copy; MAC Adminsión Enero-Marzo 2017</p>
+                    </div>
+                 </div>
+              </div>
+          </div>
+          <!-- /.container -->
+      </footer>
+
+
+</body>
+
+</html>
