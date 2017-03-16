@@ -7,6 +7,7 @@ def index(request):
 	
 	return render(request, 'preg_index.html')
 
+
 def pregunta(request, name):
 
 	if request.method == 'POST':
